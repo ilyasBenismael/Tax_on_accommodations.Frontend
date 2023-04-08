@@ -1,1 +1,77 @@
-<p>taxe-trim-create works!</p>
+<div class="container">
+
+
+<div class="card">
+  <div class="card-header">Payer un taxe trimestriel</div>
+  <div class="card-body">
+
+    <div class="form-group">
+     Reference
+      <input type="text" class="form-control" [(ngModel)]="infoRecuTrim.ref">
+    </div>
+
+    <div class="form-group">
+      CIN
+      <input type="text" class="form-control" [(ngModel)]="infoRecuTrim.cin">
+    </div>
+
+    <div class="form-group">
+      Refererence du local
+      <input type="text" class="form-control"[(ngModel)]="infoRecuTrim.referenceLocal">
+    </div>
+
+    <div class="form-group">
+      Categorie du local
+      <select class="form-select" [(ngModel)]="infoRecuTrim.categorieLocalName">
+        <option value="villa">villa</option>
+        <option value="maison">maison</option>
+        <option value="duplex">duplex</option>
+        <option value="appartement">appartement</option>
+
+      </select>
+    </div>
+
+    <div class="form-group">
+      Annee
+      <input type="text" class="form-control"[(ngModel)]="infoRecuTrim.annee">
+    </div>
+
+    <div class="form-group">
+      Trimestre
+      <select class="form-select" [(ngModel)]="infoRecuTrim.trim">
+        <option value="1">1ere trimestre</option>
+        <option value="2">2eme trimestre</option>
+        <option value="3">3eme trimestre</option>
+        <option value="4">4eme trimestre</option>
+      </select>
+    </div>
+
+
+    <div class="form-group">
+      Date de presentation
+      <input type="date" class="form-control"[(ngModel)]="infoRecuTrim.datePresentation">
+    </div>
+
+    <div class="form-group">
+      Nombre de nuits
+      <input type="text" class="form-control"[(ngModel)]="infoRecuTrim.nombreNuite">
+    </div>
+
+  </div>
+
+  <div class="card-footer">
+    <button class="btn btn-danger" (click)="payer()">Payer</button>
+  </div>
+</div>
+
+
+  <h5> {{ result }}  </h5>
+
+
+
+
+
+</div>
+
+
+

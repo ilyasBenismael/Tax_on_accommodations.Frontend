@@ -4,19 +4,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaxeTrimCreateComponent } from './taxeTrim/taxe-trim-create/taxe-trim-create.component';
-import { NotificationLocaleCreateComponent } from './notificationLocale/notification-locale-create/notification-locale-create.component';
-import { TaxeAnnuelleCreateComponent } from './taxeAnnuelle/taxe-annuelle-create/taxe-annuelle-create.component';
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
+import { TaxeTrimListComponent } from './taxeTrim/taxe-trim-list/taxe-trim-list.component';
+import { EarthComponent } from './earth/earth.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TaxeTrimCreateComponent,
-    NotificationLocaleCreateComponent,
-    TaxeAnnuelleCreateComponent
+    TaxeTrimListComponent,
+    EarthComponent,
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
