@@ -1,0 +1,241 @@
+
+.father{
+  display: flex;
+}
+
+.earthcard{
+  width: 600px;
+}
+
+
+.searchcard{
+  margin-top: 90px;
+  width: 300px;
+  margin-left: 5px;
+}
+
+
+.showAllBtn{
+  margin: 10px;
+}
+
+
+.earth {
+  cursor: pointer;
+  margin: auto;
+  margin-top: 70px;
+  width: 450px;
+  height: 450px;
+  background-image: url("https://1.bp.blogspot.com/-UUXaK5GCj-k/UcsKJRMgkVI/AAAAAAAACfM/sePP_H08JTQ/s1600/1.jpg");
+  border-radius: 50%;
+  animation: spin 30s linear alternate infinite;
+  box-shadow: -20px -20px 50px 2px #000 inset,0 0 20px 2px #000;
+}
+
+@keyframes spin {
+  100%{background-position: 100%;}
+}
+
+
+.title{
+  background-color: #0c0c0c;
+  color: #adacac;
+  padding: 15px;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 90px;
+  width: 550px;
+}
+
+
+.placecadre{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  width: 550px;
+  height: 350px;
+  border-bottom-left-radius: 17px ;
+  border-bottom-right-radius: 17px
+}
+
+.heads{
+  -webkit-text-stroke: 1.5px black;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+
+.profil{
+width: 60px;
+height: 60px;
+border-radius: 20px;
+background-image: url("imgs/daoudiate.png")}
+
+
+
+.searchicon{
+  padding: 7px;
+  margin: 5px;
+  border-radius: 10px;
+  border-color: white;
+}
+
+
+
+.upbar{
+  background-color: #242424;
+  padding: 11px;
+ border-top-left-radius: 17px ;
+ border-top-right-radius: 17px;
+}
+
+
+.tabcin{
+  background-color: gray;
+  padding: 12px;
+  font-size: 25px;
+  font-family: "Adobe Arabic";
+  color: black;
+  font-weight: bold;
+  border-bottom-left-radius: 17px ;
+  border-bottom-right-radius: 17px;
+  max-height: 350px;
+  overflow: scroll;
+}
+
+
+.carre{
+  width: 100px;
+  height: 100px;
+}
+
+.topcenter{
+  position: absolute;
+  top: 40px;
+  right:250px
+}
+.topleft{
+  position: absolute;
+  top: 40px;
+  left:40px}
+
+.topright{
+  position: absolute;
+  top: 40px;
+  right:40px
+}
+.middle{
+  position: absolute;
+  top: 150px;
+  right:250px
+}
+.middleleft{
+  position: absolute;
+  top: 150px;
+  left:40px
+}
+.middleright{
+  position: absolute;
+  top: 150px;
+  right:40px
+}
+.botleft{
+  position: absolute;
+  bottom: 40px;
+  left:40px
+}
+.botcenter{
+  position: absolute;
+  bottom: 40px;
+  left:250px
+}
+.botright{
+  position: absolute;
+  bottom: 40px;
+  right:40px
+}
+
+.gplace{
+  position: absolute;
+  bottom: 70px;
+  left:150px
+}
+
+.dplace{
+  position: absolute;
+  bottom: 200px;
+  right:250px
+}
+
+.mplace{
+  position: absolute;
+  bottom: 10px;
+  right:150px
+}
+
+
+.kesh{
+  transition: all 5s ease;
+  background-image: url("imgs/kesh.png")}
+
+.gueliz{
+  transition: all 5s ease;
+  background-image: url("imgs/gueliz.png")}
+
+.imam-malik{
+  background-image: url("imgs/imammalik.png")}
+
+.ibn-toumert{
+  background-image: url("imgs/ibntoumert.png")}
+
+.medina{
+  background-image: url("imgs/medina.png")}
+
+.jamaa-el-fana{
+  background-image: url("imgs/elfana.png")}
+
+.el-koutoubia{
+  background-image: url("imgs/koutoubia.png")}
+
+.hay-mohamadi{
+  background-image: url("imgs/haymohamadi.png")}
+
+.al-qods{
+  background-image: url("imgs/qods.png")}
+
+.daoudiate{
+  background-image: url("imgs/daoudiate.png")}
+
+
+.lochead{
+  background-color: #242424;
+  color: white;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  width: 200px;
+  height: 35px;
+  padding: 10px;
+}
+
+
+.localwindow{
+  color: black;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-top: 90px;
+  margin-left: 50px;
+  background-color: #bebebe;
+  width: 200px;
+  max-height: 450px;
+}
+
+.pointer{
+  cursor: pointer;
+}

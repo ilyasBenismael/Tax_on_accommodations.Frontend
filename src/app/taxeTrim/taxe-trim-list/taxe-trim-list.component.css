@@ -1,0 +1,53 @@
+body{
+  background: #d1d5db;
+}
+
+
+.form{
+  position: relative;
+}
+
+.searchicon{
+  padding: 7px;
+  margin: 5px;
+  border-radius: 10px;
+  border-color: white;
+}
+
+
+.form .fa-search{
+  width: 5vh;
+  margin: 10px;
+  height: 5vh;
+  color: #9ca3af;
+}
+
+
+.taxes{
+margin-top: 10px;
+}
+
+
+.combo{
+  width:160px;
+  height: 5vh;
+  margin:5px;
+}
+
+
+.form span{
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+}
+
+
+.form-input{
+  width: 500px;
+  height: 5vh;
+  border-radius: 10px;
+}
+
+

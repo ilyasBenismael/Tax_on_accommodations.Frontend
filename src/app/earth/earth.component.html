@@ -1,0 +1,135 @@
+<div class="father">
+
+<div class="earthcard">
+
+
+<div *ngIf="visible=='earth'" (click)="show('kesh')" class="earth">
+</div>
+
+
+<div *ngIf="visible=='kesh'" >
+  <h2 (click)="show('earth')"  class="title">Marrakech[{{keshLN}}]</h2>
+  <div class="kesh placecadre" >
+  <h4 (mouseenter)="showlocs(1,1)" (mouseleave)="hidelocs()" (click)="show('medina')" class="mplace heads">
+    Medina[{{secteurs.get("cs1")}}]</h4>
+  <h4 (mouseenter)="showlocs(1,2)" (mouseleave)="hidelocs()" (click)="show('gueliz')"  class="gplace heads">Gueliz[{{secteurs.get("cs2")}}]</h4>
+  <h4 (mouseenter)="showlocs(1,3)" (mouseleave)="hidelocs()" (click)="show('daoudiate')"  class="dplace heads">Daoudiate[{{secteurs.get("cs3")}}]</h4>
+</div>
+</div>
+
+
+
+  <div *ngIf="visible=='medina'">
+    <h2 (click)="show('kesh')"  class="title">Medina[{{secteurs.get("cs1")}}]</h2>
+    <div class="medina placecadre" >
+      <h4 (mouseenter)="showlocs(2,1)" (mouseleave)="hidelocs()" (click)="show('jamaa-el-fana')"  class="topright heads">jamaa-el-fana[{{quartiers.get("cq1")}}]</h4>
+      <h4 (mouseenter)="showlocs(2,2)" (mouseleave)="hidelocs()" (click)="show('el-koutoubia')"  class="botleft heads">el-koutoubia[{{quartiers.get("cq2")}}]</h4>
+    </div>
+  </div>
+
+  <div *ngIf="visible=='jamaa-el-fana'">
+    <h2 (click)="show('medina')"  class="title">jamaa-el-fana[{{quartiers.get("cq1")}}]</h2>
+    <div class="jamaa-el-fana placecadre" >
+      <h4 (mouseenter)="showlocs(3,1)" (mouseleave)="hidelocs()" class="botright heads">rue-tetouan[{{rues.get("cr1")}}]</h4>
+      <h4  (mouseenter)="showlocs(3,2)" (mouseleave)="hidelocs()" class="topcenter heads">jebal-al-akhdar[{{rues.get("cr2")}}]</h4>
+    </div>
+  </div>
+
+  <div *ngIf="visible=='el-koutoubia'">
+    <h2 (click)="show('medina')"  class="title">el-koutoubia[{{quartiers.get("cq2")}}]</h2>
+    <div class="el-koutoubia placecadre" >
+      <h4 (mouseenter)="showlocs(3,3)" (mouseleave)="hidelocs()" class="botright heads">dar-said[{{rues.get("cr3")}}]</h4>
+      <h4 (mouseenter)="showlocs(3,4)" (mouseleave)="hidelocs()" class="topcenter heads">derb-alhajra[{{rues.get("cr4")}}]</h4>
+    </div>
+  </div>
+
+
+
+
+
+  <div *ngIf="visible=='gueliz'">
+    <h2 (click)="show('kesh')"  class=" title">Gueliz[{{secteurs.get("cs2")}}]</h2>
+    <div class="gueliz placecadre" >
+      <h4 (mouseenter)="showlocs(2,3)" (mouseleave)="hidelocs()" (click)="show('imam-malik')"  class="middleright heads">imam-malik[{{quartiers.get("cq3")}}]</h4>
+      <h4 (mouseenter)="showlocs(2,4)" (mouseleave)="hidelocs()" (click)="show('ibn-toumert')"  class="middleleft heads">ibn-toumert[{{quartiers.get("cq4")}}]</h4>
+    </div>
+  </div>
+
+  <div *ngIf="visible=='imam-malik'">
+    <h2 (click)="show('gueliz')"  class="title">imam-malik[{{quartiers.get("cq3")}}]</h2>
+    <div class="imam-malik placecadre" >
+      <h4 (mouseenter)="showlocs(3,5)" (mouseleave)="hidelocs()" class="botright heads">wadi-al-makhazin[{{rues.get("cr5")}}]</h4>
+      <h4 (mouseenter)="showlocs(3,6)" (mouseleave)="hidelocs()" class="topcenter heads">moulay-rachid[{{rues.get("cr6")}}]</h4>
+    </div>
+  </div>
+
+  <div *ngIf="visible=='ibn-toumert'">
+    <h2 (click)="show('gueliz')"  class=" title">ibn-toumert[{{quartiers.get("cq4")}}]</h2>
+    <div class="ibn-toumert placecadre">
+      <h4 (mouseenter)="showlocs(3,7)" (mouseleave)="hidelocs()" class="topcenter heads">ibn-atia[{{rues.get("cr7")}}]</h4>
+      <h4 (mouseenter)="showlocs(3,8)" (mouseleave)="hidelocs()" class="botright heads">sebou[{{rues.get("cr8")}}]</h4>
+    </div>
+  </div>
+
+
+
+
+  <div *ngIf="visible=='daoudiate'">
+    <h2 (click)="show('kesh')" class="title">Daoudiate[{{secteurs.get("cs3")}}]</h2>
+    <div class="daoudiate placecadre" >
+      <h4 (mouseenter)="showlocs(2,5)" (mouseleave)="hidelocs()" (click)="show('hay-mohamadi')"  class="topright heads">hay-mohamadi[{{quartiers.get("cq5")}}]</h4>
+      <h4 (mouseenter)="showlocs(2,6)" (mouseleave)="hidelocs()" (click)="show('al-qods')"  class="middleleft heads">al-qods[{{quartiers.get("cq6")}}]</h4>
+    </div>
+  </div>
+
+  <div *ngIf="visible=='hay-mohamadi'">
+    <h2 (click)="show('daoudiate')" class="title">hay-mohamadi[{{quartiers.get("cq5")}}]</h2>
+    <div class="hay-mohamadi placecadre" >
+      <h4 (mouseenter)="showlocs(3,9)" (mouseleave)="hidelocs()" class="topcenter heads">ibn-haitam[{{rues.get("cr9")}}]</h4>
+      <h4 (mouseenter)="showlocs(3,10)" (mouseleave)="hidelocs()" class="botright heads">ibn-sina[{{rues.get("cr10")}}]</h4>
+    </div>
+  </div>
+
+  <div *ngIf="visible=='al-qods'">
+    <h2 (click)="show('daoudiate')" class="title">al-qods[{{quartiers.get("cq6")}}]</h2>
+    <div class="al-qods placecadre" >
+      <h4 (mouseenter)="showlocs(3,11)" (mouseleave)="hidelocs()" class="topcenter heads">palestine[{{rues.get("cr11")}}]</h4>
+      <h4 (mouseenter)="showlocs(3,12)" (mouseleave)="hidelocs()" class="botright heads">ibn-ouanane[{{rues.get("cr12")}}]</h4>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <div class="searchcard">
+    <div class="upbar searchbar d-flex justify-content-center align-items-center">
+      <input type="text" class="form-control form-input" placeholder="Chercher par cin" [(ngModel)]="cin">
+      <button (click)="findRedevableByCin(cin)" class="fa fa-search searchicon"></button>
+    </div>
+
+    <div class="tabcin">
+    <table class="table">
+      <tbody>
+      <tr *ngFor="let c of redevables; index as i">
+        <td class="pointer" (click)="countAll(c.cin)">{{c.cin}}</td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
+    <button (click)="countAll('')"  class="btn btn-dark showAllBtn">show all</button>
+  </div>
+
+
+  <div *ngIf="localVisible" class="localwindow">
+    <div class="lochead">Locals :</div>
+    <table class="table">
+      <tbody>
+      <tr  *ngFor="let c of visibleLocals; index as i">
+        <td>{{c.ref}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

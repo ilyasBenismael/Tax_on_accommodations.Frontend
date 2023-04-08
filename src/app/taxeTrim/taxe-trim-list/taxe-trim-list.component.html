@@ -1,0 +1,40 @@
+
+<div class="d-flex justify-content-center align-items-center">
+  <select class="form-select combo" [(ngModel)]="filter" >
+    <option selected value="cin">cin redevable</option>
+    <option value="ref">reference local</option>
+    <option value="all">All</option>
+  </select>
+  <input type="text" class="form-control form-input" [(ngModel)]="key" placeholder="Chercher des taxes">
+  <button class="fa fa-search searchicon" (click)="doFilter()"></button>
+  </div>
+
+
+
+<table class="table taxes">
+  <thead>
+  <th>CIN Redevable</th>
+  <th>Reference Local</th>
+  <th>Categorie</th>
+  <th>Montant de base</th>
+  <th>Mois de retard</th>
+  <th>Montant Total</th>
+  <th>Annee</th>
+  <th>Trimestre</th>
+  <th>delete</th>
+
+  </thead>
+  <tbody>
+  <tr *ngFor="let c of taxeTrims; index as i">
+    <td>{{c.cin}}</td>
+    <td>{{c.localRef}}</td>
+    <td>{{c.categorieName}}</td>
+    <td>{{c.montantBase}}</td>
+    <td>{{c.nombreMoisRetard}}</td>
+    <td>{{c.montantTotal}}</td>
+    <td>{{c.annee}}</td>
+    <td>{{c.nombreTrim}}</td>
+    <td> <button (click)="deleteTaxe(c.ref)" class="bi bi-trash">delete</button> </td>
+  </tr>
+  </tbody>
+</table>
